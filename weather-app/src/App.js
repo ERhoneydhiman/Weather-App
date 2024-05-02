@@ -3,10 +3,11 @@ import Header from './comps/Header';
 import Card from './comps/Card';
 import { useState, useEffect} from 'react'
 
-const API_KEY = 'a615e8461ef54df481f62726240105';
+// const API_KEY = process.env.REACT_APP_API_KEY;
 
 
 function App() {
+
   const [location, setLocation] = useState('')
 
   const [error, setError] = useState(null)
@@ -25,7 +26,8 @@ function App() {
 
 
   useEffect(() => {
-    const API_URL = `http://api.weatherapi.com/v1/current.json?key=${API_KEY}&q=${location}`;
+
+    const API_URL = `http://api.weatherapi.com/v1/current.json?key=${process.env.REACT_APP_API_KEY}&q=${location}`;
   
     const fetchData = async () => {
       try {
