@@ -27,7 +27,7 @@ function App() {
 
   useEffect(() => {
 
-    const API_URL = `http://api.weatherapi.com/v1/current.json?key=${API_KEY}&q=${location}`;
+    const API_URL = `https://api.weatherapi.com/v1/current.json?key=${API_KEY}&q=${location}`;
   
     const fetchData = async () => {
       try {
