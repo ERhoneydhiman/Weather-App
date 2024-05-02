@@ -1,0 +1,156 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.App {
+    height: 100vh;
+    width: 100%;
+    background-color: rgb(95, 116, 132);
+    color: white;
+
+    background-image: url(imgs/bg-img.jpg);
+    background-size: cover;
+    background-position: bottom;
+}
+
+h1 {
+    text-align: center;
+    padding: 5vh 0 5vh 0;
+    color: rgb(228, 149, 3);
+    text-shadow: 2px 2px 10px black;
+    font-size: 3rem;
+}
+
+.main {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#error-msg {
+    color: red;
+    font-size: x-large;
+    font-weight: 500;
+    margin: 0 0 2vh 0;
+}
+
+.search-loc {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 5vw 0 5vw;
+    gap: 2vh;
+
+}
+
+#input-field {
+    width: 30vw;
+    height: 6vh;
+    font-size: xx-large;
+    border-radius: 30px;
+    border: 3px solid rgb(18, 32, 65);
+    padding: 0 15px 0 15px;
+}
+
+button {
+    width: 10vw;
+    height: 5vh;
+    border: 2px solid rgb(18, 32, 65);
+    border-radius: 20px;
+    font-size: x-large;
+    background-color: rgb(228, 149, 3);
+    text-align: center;
+}
+
+.card {
+    height: 70vh;
+    width: 40%;
+    border: 5px solid rgb(255, 255, 255);
+    border-radius: 10%;
+    background-color: rgba(0, 0, 0, 0.462);
+    text-align: center;
+    margin: 0 10vw 0 5vw;
+}
+
+.data {
+    margin: 5vh 3vw;
+}
+
+#city {
+    text-align: center;
+    font-size: xx-large;
+}
+
+#temp {
+    font-size: xx-large;
+}
+
+.weather1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 7vw;
+    margin: 5vh 0;
+}
+
+.weather2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+table {
+    width: 100%;
+    text-align: left;
+}
+
+#last-update {
+    text-align: center;
+    margin: 10vh 0;
+}
+
+@media screen and (max-width : 1400px) {
+    h1 {
+        font-size: 2rem;
+        padding: 4vh 0 2vh 0;
+
+    }
+
+    .main {
+        flex-direction: column;
+    }
+
+    .search-loc {
+        margin: 2vh 0 2vh 0;
+        gap: 1vh;
+    }
+
+    #input-field {
+        width: 80vw;
+        height: 5vh;
+    }
+
+    button {
+        width: 30vw;
+        height: 5vh;
+    }
+
+    .card {
+        height: 60vh;
+        width: 90%;
+        border-radius: 30px;
+        margin: 0;
+        font-size: 1rem;
+    }
+    #last-update {
+        margin: 5vh 0;
+    }
+}
