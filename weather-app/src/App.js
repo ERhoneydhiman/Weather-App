@@ -1,3 +1,6 @@
+import { inject } from '@vercel/analytics';
+ 
+inject();
 import './App.css';
 import Header from './comps/Header';
 import Card from './comps/Card';
