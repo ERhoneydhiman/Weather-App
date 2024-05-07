@@ -1,10 +1,12 @@
-import { inject } from '@vercel/analytics';
  
-inject();
 import './App.css';
 import Header from './comps/Header';
 import Card from './comps/Card';
 import { useState, useEffect} from 'react'
+import { inject } from '@vercel/analytics';
+inject();
+
+
 
 const API_KEY = process.env.REACT_APP_API_KEY;
 
